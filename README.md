@@ -55,6 +55,7 @@ Unser Ziel war es, ein kleines, aber vollständiges, gut getestetes und realitä
 ## 3. Klassendiagramm & Modellierung
 
 Die objektorientierte Modellierung basiert auf einem vereinfachten ER-Diagramm mit zentralen Klassen wie Hotel, Room, Booking, Guest, RoomType etc. Diese wurden logisch in Python übertragen – mit besonderem Fokus auf Komposition, Aggregation und Kapselung. Das resultierende Klassendiagramm zeigt die Beziehung zwischen Entitäten und wurde mit Visual Paradigm erstellt.
+![image](https://github.com/user-attachments/assets/56fb1b85-b242-4fcf-8ad3-47b230e0546c)
 
 *(Siehe Klassendiagramm im GitHub-Ordner oder in der Abgabedokumentation.)*
 
@@ -106,38 +107,42 @@ Die Erweiterung visualisiert die Belegungsrate je Hotel und Zimmertyp. Sie wurde
 
 ---
 
-## 8. Lessons Learned
+## 8. Was wir gelernt haben
 
-Wir haben gelernt:
+Während der Umsetzung dieses Projekts haben wir nicht nur unser technisches Know-how ausgebaut, sondern auch ein tieferes Verständnis für strukturiertes Arbeiten, sauberen Codeaufbau und Selbstorganisation gewonnen. Nachfolgend unsere wichtigsten Erkenntnisse:
 
-- wie man aus einem ER-Modell eine objektorientierte Architektur baut  
-- wie man Schichten entkoppelt und testbar gestaltet  
-- wie wichtig klare Verantwortlichkeiten und Absprachen sind  
-- dass auch ein kleines, aber gut strukturiertes Projekt überzeugen kann
+### Datenstrukturierung aus der Praxis
 
-Unsere persönliche Entwicklung war uns besonders wichtig: Wir wollten unabhängig ein Projekt aufbauen, das in sich stimmig, sauber dokumentiert und ehrlich erarbeitet ist.
+- Die Übertragung eines ER-Diagramms in ein objektbasiertes Klassensystem war herausfordernd, aber zentral für den Projekterfolg.
+- Klassen wie `Booking`, `Invoice` oder `RoomType` halfen uns, logische Zusammenhänge in Code zu übersetzen.
+- Wir erkannten, wie nützlich Komposition und Aggregation sind, um abhängige Objekte wie Rechnungen automatisch zu erzeugen oder zu löschen.
+
+### Strukturiertes Arbeiten mit Python
+
+- Wir nutzten konsequent Objektorientierung: Konstruktoren, private Attribute, Assoziationen und Methoden wie `add_room()` oder `cancel_booking()`.
+- Die Trennung zwischen Datenhaltung (Model) und Logik (BLL) hat sich im Verlauf mehrfach als hilfreich erwiesen.
+- Besonders bei der Rechnungs- und Preislogik merkten wir, wie wichtig es ist, Verantwortlichkeiten im Code sauber zu trennen.
+
+### GitHub im echten Teamprozess
+
+- Durch das Arbeiten mit GitHub verstanden wir, wie wichtig Versionierung und Commit-Strukturen sind.
+- Wir testeten und setzten Branches korrekt ein – inkl. Konfliktlösung bei Überschneidungen.
+- Änderungen mussten wir oft zurücknehmen und systematisch neu einarbeiten – was unser Verständnis für „Codequalität“ stark geschärft hat.
+
+### Eigenständige Organisation
+
+- Durch die bewusste Trennung vom ursprünglichen Team lernten wir, Verantwortung für Architektur, Story-Umsetzung und Dokumentation zu übernehmen.
+- Wir legten Wert auf klare Kommunikation und strukturierten Fortschritt – was uns half, jederzeit den Überblick zu behalten.
+- Feedbackgespräche mit der Dozentin Charuta halfen uns, unsere Lösungen fachlich fundiert auszurichten.
+
+### Aufbau & Testbarkeit
+
+- Unser zentrales Menüsystem (`run.py`) wurde so konzipiert, dass alle Funktionen modular und unabhängig aufrufbar sind.
+- Validierungshilfen (`input_helper.py`, `validation_helper.py`) sorgten für einheitliche Benutzerführung.
+- Die Dateistruktur war so gewählt, dass sowohl Testing als auch Erweiterungen (z. B. Visualisierung) ohne größere Umbauten möglich waren.
+- Durch saubere DAO-Klassen konnten wir Datenbankoperationen leicht isolieren und testen.
 
 ---
 
-## 9. Projektstart & Nutzung
-
-```bash
-python app.py
-```
-
-- Menü wählen (Gast / Admin)  
-- gewünschte Funktion ausführen (z. B. Buchen, Rechnung anzeigen)
-
----
-
-## 10. Abgabe & Kontakt
-
-- Abgabe: 15. Juni 2025  
-- Modul: Anwendungsentwicklung mit Python  
-- Team: David & Eufrat (FHNW, Business Artificial Intelligence)  
-- Deepnote: siehe Link oben  
-- GitHub-Link / Video-Link: werden ergänzt
-
----
-
-**Vielen Dank fürs Lesen!**
+**Fazit:**  
+Dieses Projekt hat uns gezeigt, wie wertvoll es ist, selbstständig eine vollständige Anwendung zu entwerfen – von der Datenstruktur bis zum Testmenü. Dabei waren nicht nur technische Fähigkeiten, sondern auch Planung, Reflexion und Disziplin gefragt.
