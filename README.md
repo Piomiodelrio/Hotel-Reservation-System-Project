@@ -26,15 +26,11 @@ Das System ermöglicht es Gästen, nach verfügbaren Hotels und Zimmern zu suche
 
 Ursprünglich waren wir Teil einer vierköpfigen Gruppe. Im Laufe der Zusammenarbeit wurde jedoch klar, dass eine enge Kooperation in diesem Team nicht möglich war. Trotz anfänglicher Gespräche über gemeinsame Verantwortlichkeiten, stellte sich bald heraus, dass die Arbeits- und Kommunikationsstile zu unterschiedlich waren. Dies führte zu Missverständnissen, doppelten Aufgaben und fehlender Abstimmung.
 
-Nach Rücksprache mit unserer Dozentin **Charuta** entschieden wir uns bewusst dazu, nicht gemeinsam weiterzuarbeiten. Stattdessen erhielten wir die Möglichkeit, ein separates, auf uns abgestimmtes Projekt abzugeben, das dieselben Kriterien erfüllte, aber ohne die Abhängigkeit von einem Team. Dies wurde ausdrücklich genehmigt und dokumentiert.
+Nach Rücksprache mit der Dozentin wurde eine formale Gruppenaufteilung vereinbart. Ab diesem Zeitpunkt war klar definiert, dass wir zu zweit ein eigenständiges Projekt umsetzen. Die Anforderungen blieben identisch zur ursprünglichen Aufgabe – inklusive der vollständigen Umsetzung aller Minimal-User-Stories und mindestens einer Erweiterung.
 
-**Unsere alternative Vereinbarung beinhaltete:**
-- Umsetzung aller **Minimal-User-Stories** eigenständig  
-- Umsetzung einer **Erweiterung** (Datenbankschema oder Visualisierung)
+Wir entschieden uns für die Erweiterung **„Visualisierung der Belegungsraten“**, da uns die Verbindung zu Auswertungs-Logik besonders interessierte und wir hier eigene Stärken einbringen konnten.
 
-Wir entschieden uns bewusst für die Erweiterung **„Visualisierung der Belegungsraten“**, da uns die Verbindung zu Auswertungs-Logik besonders interessierte und wir hier eigene Stärken einbringen konnten.
-
-Trotz einiger technischer Einstiegshürden und neuem Rollenverständnis haben wir das Projekt schrittweise aufgebaut. Viele Komponenten – etwa DAO-Struktur, Validierungslogik und Rechnungsmodellierung – mussten wir selbst recherchieren und implementieren. In enger Abstimmung mit Charuta erhielten wir dazu gezieltes Feedback.
+Trotz einiger technischer Einstiegshürden und neuem Rollenverständnis haben wir das Projekt schrittweise aufgebaut. Viele Komponenten – etwa DAO-Struktur, Validierungslogik und Rechnungsmodellierung – mussten wir selbst recherchieren und implementieren.
 
 Ein besonderes Augenmerk legten wir auf die saubere Trennung der Schichten, die Wiederverwendbarkeit der Komponenten sowie die testbare Struktur unseres `run.py`-Menüs. Es erlaubt sowohl Admins als auch Gästen, gezielt über die Konsole durch das System zu navigieren.
 
