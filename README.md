@@ -17,7 +17,7 @@ Das System ermöglicht es Gästen, nach verfügbaren Hotels und Zimmern zu suche
 
 **Architektur (Schichtenmodell):**
 - Model Layer – Domänenklassen: Hotel, Room, Guest, Booking, Invoice etc.  
-- Data Access Layer (DAL) – Datenbankzugriffe via SQLite CRUD  
+- Data Access Layer (DAL) – Datenbankzugriffe via SQLite CRUD (über sogenannte DAOs = Data Access Objects)  
 - Business Logic Layer (BLL) – Validierungen und Logik (Preis, Verfügbarkeit etc.)  
 - UI Layer – Konsolenführung via `run.py`, Eingabe- und Validierungshelfer  
 - User Stories – je Story ein Skript für gezieltes Testen
@@ -32,7 +32,7 @@ Nach Rücksprache mit unserer Dozentin **Charuta** entschieden wir uns bewusst d
 - Umsetzung aller **Minimal-User-Stories** eigenständig  
 - Umsetzung einer **Erweiterung** (Datenbankschema oder Visualisierung)
 
-Wir entschieden uns bewusst für die Erweiterung **„Visualisierung der Belegungsraten“**, da uns die Verbindung zu Datenanalyse und Reporting besonders interessierte und wir hier eigene Stärken einbringen konnten.
+Wir entschieden uns bewusst für die Erweiterung **„Visualisierung der Belegungsraten“**, da uns die Verbindung zu Auswertungs-Logik besonders interessierte und wir hier eigene Stärken einbringen konnten.
 
 Trotz einiger technischer Einstiegshürden und neuem Rollenverständnis haben wir das Projekt schrittweise aufgebaut. Viele Komponenten – etwa DAO-Struktur, Validierungslogik und Rechnungsmodellierung – mussten wir selbst recherchieren und implementieren. In enger Abstimmung mit Charuta erhielten wir dazu gezieltes Feedback.
 
@@ -55,8 +55,7 @@ Unser Ziel war es, ein kleines, aber vollständiges, gut getestetes und realitä
 ## 3. Klassendiagramm & Modellierung
 
 Die objektorientierte Modellierung basiert auf einem vereinfachten ER-Diagramm mit zentralen Klassen wie Hotel, Room, Booking, Guest, RoomType etc. Diese wurden logisch in Python übertragen – mit besonderem Fokus auf Komposition, Aggregation und Kapselung. Das resultierende Klassendiagramm zeigt die Beziehung zwischen Entitäten und wurde mit Visual Paradigm erstellt.
-![image](https://github.com/user-attachments/assets/4ef5068a-2656-42ad-8203-d434d4d85a8d)
-
+![image](https://github.com/user-attachments/assets/5c35629d-c09f-41be-9be9-da3d7d147809)
 
 
 
@@ -75,7 +74,8 @@ Die Ordnerstruktur folgt einer klaren Schichtenlogik:
 📄 app.py              # Einstiegspunkt
 ```
 
-Unsere Business-Logik ist so gestaltet, dass sie vollständig testbar ist, die DAOs sind eigenständig nutzbar und kapseln alle SQL-Befehle, während die Models rein datenhaltend bleiben.
+**Was ist ein DAO?**  
+DAO steht für **Data Access Object**. Es ist ein Entwurfsmuster, das den Datenbankzugriff kapselt. Jede DAO-Klasse ist zuständig für genau eine Tabelle (z. B. BookingDAO → Tabelle Booking). Dadurch bleibt der Zugriff auf Daten strukturiert, wiederverwendbar und unabhängig von der restlichen Logik.
 
 ---
 
@@ -95,7 +95,7 @@ Unsere Business-Logik ist so gestaltet, dass sie vollständig testbar ist, die D
 
 ## 6. Erweiterung: Belegungsanalyse
 
-Die Erweiterung visualisiert die Belegungsrate je Hotel und Zimmertyp. Sie wurde mit Hilfe von `pandas` umgesetzt und erlaubt eine tabellarische Übersicht über Auslastung pro Kategorie.
+Die Erweiterung visualisiert die Belegungsrate je Hotel und Zimmertyp. Die Ausgabe erfolgt als zusammengefasste Übersicht in der Konsole (keine Nutzung von `pandas`). Die Logik wurde manuell implementiert über eigene DAO-Abfragen und Zählmethoden.
 
 ---
 
@@ -147,3 +147,28 @@ Während der Umsetzung dieses Projekts haben wir nicht nur unser technisches Kno
 
 **Fazit:**  
 Dieses Projekt hat uns gezeigt, wie wertvoll es ist, selbstständig eine vollständige Anwendung zu entwerfen – von der Datenstruktur bis zum Testmenü. Dabei waren nicht nur technische Fähigkeiten, sondern auch Planung, Reflexion und Disziplin gefragt.
+
+---
+
+## 9. Projektstart & Nutzung
+
+```bash
+python app.py
+```
+
+- Menü wählen (Gast / Admin)  
+- gewünschte Funktion ausführen (z. B. Buchen, Rechnung anzeigen)
+
+---
+
+## 10. Abgabe & Kontakt
+
+- Abgabe: 15. Juni 2025  
+- Modul: Anwendungsentwicklung mit Python  
+- Team: David & Eufrat (FHNW, Business Artificial Intelligence)  
+- Deepnote: siehe Link oben  
+- GitHub-Link / Video-Link: werden ergänzt
+
+---
+
+**Vielen Dank fürs Lesen!**
