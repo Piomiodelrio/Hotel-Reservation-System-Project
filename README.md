@@ -120,11 +120,6 @@ Während der Umsetzung dieses Projekts haben wir nicht nur unser technisches Kno
 - Die Trennung zwischen Datenhaltung (Model) und Logik (BLL) hat sich im Verlauf mehrfach als hilfreich erwiesen.
 - Besonders bei der Rechnungs- und Preislogik merkten wir, wie wichtig es ist, Verantwortlichkeiten im Code sauber zu trennen.
 
-### GitHub im echten Teamprozess
-
-- Durch das Arbeiten mit GitHub verstanden wir, wie wichtig Versionierung und Commit-Strukturen sind.
-- Wir testeten und setzten Branches korrekt ein – inkl. Konfliktlösung bei Überschneidungen.
-- Änderungen mussten wir oft zurücknehmen und systematisch neu einarbeiten – was unser Verständnis für „Codequalität“ stark geschärft hat.
 
 ### Eigenständige Organisation
 
