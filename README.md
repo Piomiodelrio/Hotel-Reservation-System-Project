@@ -55,9 +55,10 @@ Unser Ziel war es, ein kleines, aber vollständiges, gut getestetes und realitä
 ## 3. Klassendiagramm & Modellierung
 
 Die objektorientierte Modellierung basiert auf einem vereinfachten ER-Diagramm mit zentralen Klassen wie Hotel, Room, Booking, Guest, RoomType etc. Diese wurden logisch in Python übertragen – mit besonderem Fokus auf Komposition, Aggregation und Kapselung. Das resultierende Klassendiagramm zeigt die Beziehung zwischen Entitäten und wurde mit Visual Paradigm erstellt.
-![image](https://github.com/user-attachments/assets/56fb1b85-b242-4fcf-8ad3-47b230e0546c)
+![image](https://github.com/user-attachments/assets/4ef5068a-2656-42ad-8203-d434d4d85a8d)
 
-*(Siehe Klassendiagramm im GitHub-Ordner oder in der Abgabedokumentation.)*
+
+
 
 ---
 
