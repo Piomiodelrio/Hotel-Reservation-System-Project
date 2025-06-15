@@ -1,6 +1,8 @@
 # Hotel Reservation System
 
 Dieses Projekt wurde im Rahmen des Moduls **„Anwendungsentwicklung mit Python“ (FS25)** an der FHNW umgesetzt. Ziel war es, ein funktionales Hotelreservierungssystem zu entwickeln, das Konzepte wie objektorientierte Programmierung, eine mehrschichtige Architektur und Datenbankzugriffe mit SQLite integriert und die vorgegebenen User Stories erfüllt.
+
+
 Deepnote-Link:
 https://deepnote.com/workspace/Pio-8461a960-c995-4b9f-92cb-ec92312421cf/project/Eufrat-Pio-Oezmens-Untitled-project-7b559ee8-17f5-4e7f-b51b-04010c696c4d/notebook/4c35ea39249c49c9a2baaa420a17344e
 ---
